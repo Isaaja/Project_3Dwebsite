@@ -3,8 +3,9 @@ import { User } from "@phosphor-icons/react";
 const Navbar = () => {
   return (
     <>
-      <div className="navbar absolute top-0 left-0 ">
+      <div className="navbar absolute top-0 left-0 h-24 ">
         <div className="navbar-start">
+          <img src={"/assets/logo/Logo.svg"} width={150} />
           <div className="dropdown ">
             <div
               tabIndex={0}
@@ -44,7 +45,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">BrandKu</a>
+          <a className="btn btn-ghost text-xl"></a>
         </div>
         <div className="navbar-end hidden lg:flex gap-3 *:*:*:text-base-100 ">
           <ul className="menu menu-horizontal px-1 bg-transparent shadow-xl rounded-full">
