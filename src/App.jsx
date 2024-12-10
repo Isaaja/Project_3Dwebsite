@@ -1,21 +1,12 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import {
-  Contact,
-  Dashboard,
-  Experience,
-  Hero,
-  Navbar,
-  Portofolio,
-} from "./components";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Dashboard />
+    <div className="w-full flex justify-center h-screen">
+      <Navbar/>
+      <Hero />
     </div>
   );
 }
