@@ -20,7 +20,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-images' : "url('assets/images/background.jpg')",
+        'hero-images' : "url('public/assets/images/Top Streetwear_ Streetwear, Hip hop & Urban Clothing.png')",
       },
     },
   },
