@@ -20,7 +20,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-images' : "url('./public/assets/images/Wallpaper Hd Pemandangan.jpeg')",
+        'hero-images' : "url('public/assets/images/Top Streetwear_ Streetwear, Hip hop & Urban Clothing.png')",
       },
     },
   },
