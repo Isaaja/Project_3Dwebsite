@@ -3,9 +3,9 @@ import { User } from "@phosphor-icons/react";
 const Navbar = () => {
   return (
     <>
-      <div className="navbar absolute top-0 left-0 h-24 ">
+      <div className="navbar absolute top-0 left-0 h-[15%]">
         <div className="navbar-start">
-          <img src={"/assets/logo/Logo.svg"} width={150} />
+          <img src={"/assets/logo/Logo.svg"} width={250} />
           <div className="dropdown ">
             <div
               tabIndex={0}
@@ -47,10 +47,10 @@ const Navbar = () => {
           </div>
           <a className="btn btn-ghost text-xl"></a>
         </div>
-        <div className="navbar-end hidden lg:flex gap-3 *:*:*:text-base-100 ">
-          <ul className="menu menu-horizontal px-1 bg-transparent shadow-xl rounded-full">
+        <div className="navbar-end hidden lg:flex gap-3 *:*:*:text-base-100">
+          <ul className="menu menu-horizontal px-1 bg-[#D9D9D9] bg-transparent shadow-xl rounded-full h-20 justify-center items-center w-full gap-16 ">
             <li>
-              <a className="hover:text-red-500">Sepatu</a>
+              <a className="hover:text-red-500 bg-[#FFFFFF] rounded-3xl ml-5 h-14">Sepatu</a>
             </li>
             <li>
               <a className="hover:text-red-500">Topi</a>
@@ -62,7 +62,7 @@ const Navbar = () => {
               <a className="hover:text-red-500">Jam Tangan</a>
             </li>
           </ul>
-          <a className="btn rounded-full w-12 h-12 px-3">
+          <a className="btn rounded-full w-20 h-20 px-3 mr-9">
             <User color="black" size={50} />
           </a>
         </div>
