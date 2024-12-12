@@ -1,10 +1,22 @@
-import Card from "../components/Card";
+import React from "react";
 import { motion } from "framer-motion";
+import Card3d from "../components/Card3d";
 
-const Products = () => {
+const Konten3D = () => {
+  const gambar = [
+    "/public/assets/products/baju.jpeg",
+    "/public/assets/products/jam-tangan.jpeg",
+    "/public/assets/products/baju.jpeg",
+    "/public/assets/products/baju.jpeg",
+    "/public/assets/products/baju.jpeg",
+    "/public/assets/products/baju.jpeg",
+    "/public/assets/products/baju.jpeg",
+    "/public/assets/products/baju.jpeg",
+  ];
+
   return (
     <>
-      <div className="w-full bg-accent h-[110vh] relative overflow-hidden ">
+      <div className="w-full bg-accent h-[110vh] relative overflow-hidden">
         <div className="bg-[#F7EEDD] w-[55%] h-[75%] rounded-3xl top-0">
           <div className="text-black  h-full flex flex-col p-10 relative">
             <h1 className="text-5xl top-[20px]">Lorem Ipsum</h1>
@@ -16,18 +28,12 @@ const Products = () => {
             </p>
           </div>
           <motion.div
-            className="flex justify-start absolute gap-8 left-10 bottom-0 overflow-x-scroll no-scrollbar"
+            className="flex justify-start absolute gap-8 left-10 bottom-6 no-scrollbar w-full h-[400px]"
             drag="x"
             dragConstraints={{ left: -600, right: 0 }}
           >
-            {[...Array(4).keys()].map((num) => (
-              <Card
-                key={num}
-                src={
-                  "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                }
-                link={""}
-              />
+            {gambar.map((src, index) => (
+              <Card3d key={index} src={src} link={""} />
             ))}
           </motion.div>
         </div>
@@ -35,4 +41,5 @@ const Products = () => {
     </>
   );
 };
-export default Products;
+
+export default Konten3D;
