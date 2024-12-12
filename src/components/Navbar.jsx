@@ -1,60 +1,70 @@
-import { User } from "@phosphor-icons/react";
-
 const Navbar = () => {
-  return (
-    <div className="navbar absolute top-0 left-0 w-full h-[15%] px-4">
-      <div className="navbar-start flex items-center">
-        <img src="/assets/logo/Logo.svg" alt="Logo" width={250} />
+  const handleButtonClick = (name) => {
+    console.log(`${name} clicked`);
+  };
 
-        {/* Dropdown Menu for Mobile */}
-        <div className="dropdown lg:hidden ml-4">
-          <button
-            tabIndex={0}
-            className="btn btn-ghost"
-            aria-label="Open menu"
+  return (
+    <>
+      <div className="fixed top-0 left-0 w-full bg-transparent shadow-lg z-50 flex justify-between px-[60px] py-2">
+        {/* Logo */}
+        <img
+          src="/src/assets/logo.svg"
+          alt="Logo"
+          className="w-[200px]"
+        />
+
+        {/* Button Group */}
+        <div className="flex gap-[40px] items-center ">
+          <div
+            className="h-[100px] bg-[#D9D9D9]/[.05] rounded-[50px] flex justify-center items-center px-[32px] gap-[40px]"
+            style={{ boxShadow: "0 0 18px 13px rgba(0, 0, 0, 0.2)" }}
           >
+            <button
+              className="bg-[#FFFFFF26] text-white rounded-full px-4 py-2 hover:bg-blue-600 transition min-w-[122px] h-[74px]"
+              onClick={() => handleButtonClick("Sepatu")}
+            >
+              Sepatu
+            </button>
+            <button
+              className="bg-[#FFFFFF26] text-white rounded-full px-4 py-2 hover:bg-green-600 transition min-w-[122px] h-[74px]"
+              onClick={() => handleButtonClick("Topi")}
+            >
+              Topi
+            </button>
+            <button
+              className="bg-[#FFFFFF26] text-white rounded-full px-4 py-2 hover:bg-red-600 transition min-w-[122px] h-[74px]"
+              onClick={() => handleButtonClick("Kaos")}
+            >
+              Kaos
+            </button>
+            <button
+              className="bg-[#FFFFFF26] text-white rounded-full px-4 py-2 hover:bg-red-600 transition min-w-[122px] h-[74px]"
+              onClick={() => handleButtonClick("Jam Tangan")}
+            >
+              Jam Tangan
+            </button>
+          </div>
+
+          {/* Icon User */}
+          <div className="rounded-full bg-[#D9D9D9] h-[74px] w-[74px] flex justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
               fill="none"
               viewBox="0 0 24 24"
+              strokeWidth={1.5}
               stroke="currentColor"
+              className="h-[24px] w-[24px] text-white"
             >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
               />
             </svg>
-          </button>
-
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow z-10"
-          >
-            <li><a href="#">Sepatu</a></li>
-            <li><a href="#">Topi</a></li>
-            <li><a href="#">Kaos</a></li>
-            <li><a href="#">Jam Tangan</a></li>
-          </ul>
+          </div>
         </div>
       </div>
-
-      {/* Desktop Navigation Menu */}
-      <div className="navbar-end hidden lg:flex items-center gap-4 w-full ">
-        <ul className="menu menu-horizontal bg-white/15 shadow-2xl rounded-full py-3 px-6 flex justify-around items-center w-3/4">
-          <li><a href="#" className="hover:text-black rounded-full bg-white/20 ">Sepatu</a></li>
-          <li><a href="#" className="hover:text-black rounded-full bg-white/20">Topi</a></li>
-          <li><a href="#" className="hover:text-black rounded-full bg-white/20">Kaos</a></li>
-          <li><a href="#" className="hover:text-black rounded-full bg-white/20">Jam Tangan</a></li>
-        </ul>
-
-        <button className="btn bg-white/80 rounded-full w-16 h-16 flex justify-center items-center shadow-md">
-          <User color="black" size={32} />
-        </button>
-      </div>
-    </div>
+    </>
   );
 };
 

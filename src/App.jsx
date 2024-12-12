@@ -1,13 +1,17 @@
-import Hero from "./components/Hero";
+import "./App.css";
 import Navbar from "./components/Navbar";
-import Products from "./pages/Products";
-
+import Dashboard from "./pages/Dashboard";
+import Experience from "./pages/Experience";
+import Contact from "./pages/Contact";
+import Konten3D from "./pages/Konten3D";
 function App() {
   return (
-    <div className="w-full flex flex-col items-center  bg-accent min-h-screen">
-      <Navbar/>
-      <Hero />
-      <Products/>
+    <div className="font-inter overflow-x-hidden">
+      <Navbar />
+      <Dashboard />
+      <Konten3D />
+      <Experience />
+      <Contact />
     </div>
   );
 }

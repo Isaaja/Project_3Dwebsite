@@ -1,9 +1,9 @@
 import React from "react";
 
-const Card = ({ src, judul, barang }) => {
+const Card3d = ({ src, judul, barang }) => {
   return (
     <div
-      className="min-w-[250px] h-[250px] bg-cover rounded-[38px]  p-[28px] flex flex-col justify-between"
+      className="min-w-[300px] h-[300px] bg-cover rounded-[38px]  p-[28px] flex flex-col justify-between"
       style={{
         boxShadow: "0 4px 7px 0px rgba(0, 0, 0, 0.5)",
         backgroundImage: `url(${src})`,
@@ -15,4 +15,4 @@ const Card = ({ src, judul, barang }) => {
   );
 };
 
-export default Card;
+export default Card3d;
