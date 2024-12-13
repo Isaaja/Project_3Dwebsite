@@ -1,44 +1,58 @@
+import { useEffect, useState } from "react";
+
 const Navbar = () => {
+  const topX = 50;
+  const [active, setActive] = useState(false);
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > topX) {
+      console.log("scrolled");
+      setActive(true);
+    } else {
+      setActive(false);
+    }
+  });
+
   const handleButtonClick = (name) => {
     console.log(`${name} clicked`);
   };
 
   return (
     <>
-      <div className="fixed top-0 left-0 w-full bg-transparent shadow-lg z-50 flex justify-between px-[60px] py-2">
+      <div
+        className={`${
+          active ? "bg-opacity-100" : "bg-opacity-0"
+        } fixed top-0 left-0 w-full shadow-lg z-50 flex justify-between px-[60px] py-2 bg-slate-[1/2] transition-all duration-300 ease-in-out`}
+      >
         {/* Logo */}
-        <img
-          src="/src/assets/logo.svg"
-          alt="Logo"
-          className="w-[200px]"
-        />
+        <img src="/src/assets/logo.svg" alt="Logo" className="w-[200px]" />
 
         {/* Button Group */}
         <div className="flex gap-[40px] items-center ">
           <div
-            className="h-[100px] bg-[#D9D9D9]/[.05] rounded-[50px] flex justify-center items-center px-[32px] gap-[40px]"
+            className="h-[100px] bg-[#D9D9D9]/[.05] rounded-[50px] flex justify-center items-center px-[32px] gap-[40px] font-bold text-white"
             style={{ boxShadow: "0 0 18px 13px rgba(0, 0, 0, 0.2)" }}
           >
             <button
-              className="bg-[#FFFFFF26] text-white rounded-full px-4 py-2 hover:bg-blue-600 transition min-w-[122px] h-[74px]"
+              className="bg-[#FFFFFF26]  rounded-full px-4 py-2 hover:text-black font-inter transition min-w-[122px] h-[74px]"
               onClick={() => handleButtonClick("Sepatu")}
             >
               Sepatu
             </button>
             <button
-              className="bg-[#FFFFFF26] text-white rounded-full px-4 py-2 hover:bg-green-600 transition min-w-[122px] h-[74px]"
+              className="bg-[#FFFFFF26] rounded-full px-4 py-2 hover:text-black transition min-w-[122px] h-[74px]"
               onClick={() => handleButtonClick("Topi")}
             >
               Topi
             </button>
             <button
-              className="bg-[#FFFFFF26] text-white rounded-full px-4 py-2 hover:bg-red-600 transition min-w-[122px] h-[74px]"
+              className="bg-[#FFFFFF26] rounded-full px-4 py-2 hover:text-black transition min-w-[122px] h-[74px]"
               onClick={() => handleButtonClick("Kaos")}
             >
               Kaos
             </button>
             <button
-              className="bg-[#FFFFFF26] text-white rounded-full px-4 py-2 hover:bg-red-600 transition min-w-[122px] h-[74px]"
+              className="bg-[#FFFFFF26] rounded-full px-4 py-2 hover:text-black transition min-w-[122px] h-[74px]"
               onClick={() => handleButtonClick("Jam Tangan")}
             >
               Jam Tangan
