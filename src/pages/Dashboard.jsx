@@ -23,22 +23,22 @@ const Dashboard = () => {
       {/* Cards Section */}
       <div className="flex justify-end overflow-hidden gap-7 items-end w-full px-9 h-full">
         <Card
-          src="/public/assets/products/card-1.jpeg"
+          src="/assets/products/card-1.jpeg"
           judul="asdasdas"
           barang="sepatu"
         />
         <Card
-          src="/public/assets/products/card-1.jpeg"
+          src="/assets/products/card-1.jpeg"
           judul="asdasdas"
           barang="sepatu"
         />
         <Card
-          src="/public/assets/products/card-1.jpeg"
+          src="/assets/products/card-1.jpeg"
           judul="asdasdas"
           barang="sepatu"
         />
         <Card
-          src="/public/assets/products/card-1.jpeg"
+          src="/assets/products/card-1.jpeg"
           judul="asdasdas"
           barang="sepatu"
         />
