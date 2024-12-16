@@ -22,7 +22,7 @@ const Navbar = () => {
       <div
         className={`${
           active ? "bg-opacity-100" : "bg-opacity-0"
-        } fixed top-0 left-0 w-full shadow-lg z-50 flex justify-between px-[60px] py-2 bg-slate-[1/2] transition-all duration-300 ease-in-out`}
+        } absolute top-0 left-0 w-full shadow-lg z-50 flex justify-between px-8 py-2 bg-slate-[1/2] transition-all duration-300 ease-in-out`}
       >
         {/* Logo */}
         <img src="/src/assets/logo.svg" alt="Logo" className="w-[200px]" />
