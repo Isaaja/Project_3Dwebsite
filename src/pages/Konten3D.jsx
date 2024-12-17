@@ -4,14 +4,14 @@ import Card3d from "../components/Card3d";
 
 const Konten3D = () => {
   const gambar = [
-    "/public/assets/products/baju.jpeg",
-    "/public/assets/products/jam-tangan.jpeg",
-    "/public/assets/products/baju.jpeg",
-    "/public/assets/products/baju.jpeg",
-    "/public/assets/products/baju.jpeg",
-    "/public/assets/products/baju.jpeg",
-    "/public/assets/products/baju.jpeg",
-    "/public/assets/products/baju.jpeg",
+    "/assets/products/baju.jpeg",
+    "/assets/products/jam-tangan.jpeg",
+    "/assets/products/baju.jpeg",
+    "/assets/products/baju.jpeg",
+    "/assets/products/baju.jpeg",
+    "/assets/products/baju.jpeg",
+    "/assets/products/baju.jpeg",
+    "/assets/products/baju.jpeg",
   ];
 
   return (
