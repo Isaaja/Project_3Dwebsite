@@ -24,22 +24,22 @@ const Dashboard = () => {
       <div className="flex justify-end overflow-hidden gap-7 items-end w-full px-9 h-full">
         <Card
           src="/assets/products/card-1.jpeg"
-          judul="asdasdas"
+          judul="Sepatu"
           barang="sepatu"
         />
         <Card
           src="/assets/products/card-1.jpeg"
-          judul="asdasdas"
+          judul="Topi"
           barang="sepatu"
         />
         <Card
           src="/assets/products/card-1.jpeg"
-          judul="asdasdas"
+          judul="Kaos"
           barang="sepatu"
         />
         <Card
           src="/assets/products/card-1.jpeg"
-          judul="asdasdas"
+          judul="Jam Tangan"
           barang="sepatu"
         />
       </div>
