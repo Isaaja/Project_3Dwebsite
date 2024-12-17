@@ -11,8 +11,12 @@ const Experience = () => {
             aliquid hic voluptatibus!
           </p>
         </div>
-        <div className="w-[50%] h-full flex justify-center items-center">
-          <img src="/public/assets/products/experience.png" alt="" />
+        <div
+          className="w-[50%] h-full flex justify-center items-center"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <img src="assets/products/experience.png" alt="" />
         </div>
       </div>
     </div>
