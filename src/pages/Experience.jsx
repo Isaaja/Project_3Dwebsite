@@ -1,7 +1,7 @@
 const Experience = () => {
   return (
     <div className="px-5 w-full">
-      <div className="bg-[#F7EEDD] h-screen rounded-t-[75px] flex gap-3 justify-between">
+      <div className="bg-[#F7EEDD] h-screen rounded-t-[75px] flex gap-3 justify-between px-8">
         <div className=" w-[50%] flex flex-col h-full justify-center items-left">
           <h1 className="font-bold text-3xl">Brandku</h1>
           <p>

@@ -25,34 +25,34 @@ const Navbar = () => {
         } absolute top-0 left-0 w-full shadow-lg z-50 flex justify-between px-8 py-2 bg-slate-[1/2] transition-all duration-300 ease-in-out`}
       >
         {/* Logo */}
-        <img src="/src/assets/logo.svg" alt="Logo" className="w-[200px]" />
+        <img src="/src/assets/logo.svg" alt="Logo" width={180} height={100}/>
 
         {/* Button Group */}
-        <div className="flex gap-[40px] items-center ">
+        <div className="flex gap-8 items-center ">
           <div
-            className="h-[100px] bg-[#D9D9D9]/[.05] rounded-[50px] flex justify-center items-center px-[32px] gap-[40px] font-bold text-white"
+            className="py-3 bg-[#D9D9D9]/[.05] rounded-[50px] flex justify-center items-center px-[32px] gap-8 font-bold text-white"
             style={{ boxShadow: "0 0 18px 13px rgba(0, 0, 0, 0.2)" }}
           >
             <button
-              className="bg-[#FFFFFF26]  rounded-full px-4 py-2 hover:text-black font-inter transition min-w-[122px] h-[74px]"
+              className="bg-[#FFFFFF26]  rounded-full px-4 py-2 hover:text-black font-inter transition min-w-[122px] h-16"
               onClick={() => handleButtonClick("Sepatu")}
             >
               Sepatu
             </button>
             <button
-              className="bg-[#FFFFFF26] rounded-full px-4 py-2 hover:text-black transition min-w-[122px] h-[74px]"
+              className="bg-[#FFFFFF26] rounded-full px-4 py-2 hover:text-black transition min-w-[122px] h-16"
               onClick={() => handleButtonClick("Topi")}
             >
               Topi
             </button>
             <button
-              className="bg-[#FFFFFF26] rounded-full px-4 py-2 hover:text-black transition min-w-[122px] h-[74px]"
+              className="bg-[#FFFFFF26] rounded-full px-4 py-2 hover:text-black transition min-w-[122px] h-16"
               onClick={() => handleButtonClick("Kaos")}
             >
               Kaos
             </button>
             <button
-              className="bg-[#FFFFFF26] rounded-full px-4 py-2 hover:text-black transition min-w-[122px] h-[74px]"
+              className="bg-[#FFFFFF26] rounded-full px-4 py-2 hover:text-black transition min-w-[122px] h-16"
               onClick={() => handleButtonClick("Jam Tangan")}
             >
               Jam Tangan
