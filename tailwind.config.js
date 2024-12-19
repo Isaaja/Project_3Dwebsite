@@ -20,8 +20,8 @@ export default {
         inter: ["Inter", "sans-serif"], // Tambahkan font di sini
       },
       backgroundImage: {
-        "hero-images": "url('./public/assets/images/hero-bg.png')",
-        "card01": "url('./public/assets/products/card-1.jpeg')",
+        "hero-images": "url('/assets/images/hero-bg.png')",
+        "card01": "url('/assets/products/card-1.jpeg')",
       },
     },
   },
