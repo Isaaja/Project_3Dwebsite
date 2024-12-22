@@ -18,7 +18,7 @@ const Card = ({ src, judul, barang, info }) => {
       <div className=" w-10 rounded-full flex justify-center items-center mt-28  ">
         <img src="/assets/point/point.png" alt="" className="hover:bg-black"/>
       </div>
-      <p>{barang}</p>
+      <p>tag barang: {barang}</p>
     </div>
   );
 };
