@@ -19,7 +19,7 @@ const Navbar = () => {
 
   // Fungsi untuk navigasi
   const handleButtonClick = (buttonName) => {
-    navigate(`/${buttonName.toLowerCase()}`); // Arahkan ke halaman yang sesuai
+    navigate(`/item-details/${buttonName.toLowerCase()}`); // Arahkan ke halaman yang sesuai
   };
 
   // Cek apakah URL saat ini sesuai dengan nama halaman
@@ -31,7 +31,7 @@ const Navbar = () => {
         } absolute top-0 left-0 w-full shadow-lg z-50 flex justify-between px-8 py-2 bg-slate-800 transition-all duration-300 ease-in-out`}
     >
       {/* Logo */}
-      <img src="/src/assets/logo.svg" alt="Logo" className="w-[200px]" onClick={() => handleButtonClick("")} />
+      <img src="/src/assets/logo.svg" alt="Logo" className="w-[200px]" onClick={() => navigate("/")} />
 
       {/* Button Group */}
       <div className="flex gap-8 items-center">
