@@ -42,7 +42,7 @@ function App() {
           <Route path={""} element={<Konten3D />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/item-details/:item" element={<ItemDetails />} />
+          <Route path="/item-details/:id" element={<ItemDetails />} />
         </Routes>
       </div>
     </Router>

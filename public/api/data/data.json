@@ -1,112 +1,82 @@
 {
-    "sepatu": [
-        {
-            "nama": "Nike",
-            "deskripsi": "Nike adalah sepatu stylish dengan desain modern, dilengkapi dengan teknologi air cushioning untuk kenyamanan sepanjang hari, cocok untuk aktivitas sehari-hari dan penampilan yang trendi.",
-            "harga": "Rp 9.000.000",
-            "3d": "assets/shoe/uploads_files_4182569_shoes.obj"
-        },
-        {
-            "nama": "Jordan",
-            "deskripsi": "Air Jordan 1 adalah sepatu ikonik dengan desain klasik yang menggabungkan kenyamanan dan gaya, menampilkan perpaduan warna yang mencolok dan bahan premium, sempurna untuk tampil stylish baik di lapangan maupun sehari-hari.",
-            "harga": "Rp 8.000.000",
-            "3d": "assets/shoe/uploads_files_5203823_JORDAN+_R.obj"
-        },
-        {
-            "nama": "vans",
-            "deskripsi": "Vans Classic Slip-On adalah sepatu low-profile yang nyaman dengan desain tanpa tali, menampilkan pola checkerboard ikonik dan sol waffle khas, ideal untuk gaya santai dan aktivitas sehari-hari.",
-            "harga": "Rp 7.000.000",
-            "3d": "assets/shoe/uploads_files_5627721_shoes+2.obj"
-        },
-        {
-            "nama": "asics",
-            "deskripsi": "",
-            "harga": "Rp 6.000.000"
-        }
+    "items": [
+      {
+        "id": 1,
+        "category": "shoes",
+        "name": "Nike",
+        "description": "Nike adalah sepatu stylish dengan desain modern, dilengkapi dengan teknologi air cushioning untuk kenyamanan sepanjang hari, cocok untuk aktivitas sehari-hari dan penampilan yang trendi.",
+        "price": 9000000,
+        "currency": "IDR",
+        "model3d": "/assets/images/3d/shoe/uploads_files_4182569_shoes.obj"
+      },
+      {
+        "id": 2,
+        "category": "shoes",
+        "name": "Jordan",
+        "description": "Air Jordan 1 adalah sepatu ikonik dengan desain klasik yang menggabungkan kenyamanan dan gaya, menampilkan perpaduan warna yang mencolok dan bahan premium, sempurna untuk tampil stylish baik di lapangan maupun sehari-hari.",
+        "price": 8000000,
+        "currency": "IDR",
+        "model3d": "/assets/images/3d/shoe/uploads_files_5203823_JORDAN+_R.obj"
+      },
+      {
+        "id": 3,
+        "category": "shoes",
+        "name": "Vans",
+        "description": "Vans Classic Slip-On adalah sepatu low-profile yang nyaman dengan desain tanpa tali, menampilkan pola checkerboard ikonik dan sol waffle khas, ideal untuk gaya santai dan aktivitas sehari-hari.",
+        "price": 7000000,
+        "currency": "IDR",
+        "model3d": "/assets/images/3d/shoe/uploads_files_5627721_shoes+2.obj"
+      },
+      {
+        "id": 4,
+        "category": "shoes",
+        "name": "Asics",
+        "price": 6000000,
+        "currency": "IDR"
+      },
+      {
+        "id": 5,
+        "category": "hats",
+        "name": "Lock & Co. Hatters",
+        "description": "Topi Lock & Co. Hatters adalah aksesori mewah yang dibuat dengan tangan oleh pembuat topi terkemuka, menggabungkan desain elegan dan kualitas tinggi, memberikan sentuhan klasik dan gaya yang tak lekang oleh waktu.",
+        "price": 1000000,
+        "currency": "IDR",
+        "model3d": "/assets/images/3d/hat/uploads_files_1881551_Homburg_hat.obj"
+      },
+      {
+        "id": 6,
+        "category": "hats",
+        "name": "Adidas",
+        "description": "Topi Adidas adalah aksesori olahraga dan streetwear yang mengutamakan kenyamanan dan gaya. Dengan desain minimalis, sering menampilkan logo tiga garis atau trefoil, topi Adidas tersedia dalam berbagai model seperti snapback, baseball cap, dan bucket hat.",
+        "price": 900000,
+        "currency": "IDR",
+        "model3d": "/assets/images/3d/hat/uploads_files_1956645_Cap_OBJ.obj"
+      },
+      {
+        "id": 7,
+        "category": "shirts",
+        "name": "Uniqlo",
+        "description": "Kaos polos Uniqlo terbuat dari bahan katun berkualitas tinggi, nyaman dipakai sepanjang hari, dan memiliki desain simpel namun modern, cocok untuk berbagai gaya dan mudah dipadupadankan dengan pakaian lain.",
+        "price": 300000,
+        "currency": "IDR",
+        "model3d": "/assets/images/3d/tshirt/uploads_files_1860402_ShirtOnHanger/Shirt on Hanger.obj"
+      },
+      {
+        "id": 8,
+        "category": "watches",
+        "name": "Falken",
+        "description": "Jam tangan Falken dari Triwa menawarkan desain minimalis Skandinavia dengan perpaduan elegan antara bahan stainless steel dan kulit premium. Cocok untuk gaya formal maupun kasual, jam ini mengutamakan kualitas dan estetika modern.",
+        "price": 5000000,
+        "currency": "IDR",
+        "model3d": "/assets/images/3d/watch/uploads_files_419347_Triwa_Falken_Wrist_Watch.obj"
+      }
     ],
-    "topi": [
-        {
-            "nama": "Lock & Co. Hatters",
-            "deskripsi": "Topi Lock & Co. Hatters adalah aksesori mewah yang dibuat dengan tangan oleh pembuat topi terkemuka, menggabungkan desain elegan dan kualitas tinggi, memberikan sentuhan klasik dan gaya yang tak lekang oleh waktu.",
-            "harga": "Rp 1.000.000",
-            "3d": "assets/hat/uploads_files_1881551_Homburg_hat.obj"
-        },
-        {
-            "nama": "Adidas",
-            "deskripsi": "Topi Adidas adalah aksesori olahraga dan streetwear yang mengutamakan kenyamanan dan gaya. Dengan desain minimalis, sering menampilkan logo tiga garis atau trefoil, topi Adidas tersedia dalam berbagai model seperti snapback, baseball cap, dan bucket hat.",
-            "harga": "Rp 900.000",
-            "3d": "assets/hat/uploads_files_1956645_Cap_OBJ.obj"
-        },
-        {
-            "nama": "Reebok",
-            "deskripsi": "Topi Reebok adalah aksesori olahraga dan gaya hidup yang dirancang dengan bahan ringan dan nyaman. Merek ini menawarkan berbagai jenis topi, termasuk snapback, baseball cap, dan visor, dengan desain modern dan logo Reebok yang ikonik.",
-            "harga": "Rp 800.000",
-            "3d": "assets/hat/uploads_files_2879457_obj+BASE+BALL+CAP.obj"
-        },
-        {
-            "nama": "new era",
-            "deskripsi": "Topi New Era 59FIFTY adalah topi fitted dengan desain modern dan tampilan streetwear yang khas, menawarkan kenyamanan dan gaya, serta menampilkan logo tim olahraga atau desain trendi untuk melengkapi penampilan sehari-hari.",
-            "harga": "Rp 850.000",
-            "3d": "assets/hat/uploads_files_4896452_11+Nov+2023.glb"
-        },
-        {
-            "nama": "Borsalino",
-            "deskripsi": "Topi Borsalino adalah topi fedorah mewah yang dibuat dengan tangan di Italia, terkenal karena kualitas bahan premium dan pengerjaan yang sangat detail, memberikan kesan elegan dan timeless, ideal untuk tampilan formal yang berkelas.",
-            "harga": "Rp 350.000",
-            "3d": "assets/hat/uploads_files_4618970_OBJ/OBJ/Hat-05(Smooth).obj"
-        }
-    ],
-    "kaos": [
-        {
-            "nama": "uniqlo",
-            "deskripsi": "Kaos polos Uniqlo terbuat dari bahan katun berkualitas tinggi, nyaman dipakai sepanjang hari, dan memiliki desain simpel namun modern, cocok untuk berbagai gaya dan mudah dipadupadankan dengan pakaian lain.",
-            "harga": "Rp 300.000",
-            "3d": "assets/tshirt/uploads_files_1860402_ShirtOnHanger/Shirt on Hanger.obj"
-        },
-        {
-            "nama": "h&m",
-            "deskripsi": "Kaos polos H&M terbuat dari bahan yang lembut dan nyaman, dengan desain minimalis yang cocok untuk gaya kasual sehari-hari. Tersedia dalam berbagai warna, kaos ini mudah dipadukan dengan berbagai jenis pakaian untuk tampilan yang stylish dan simpel.",
-            "harga": "Rp 350.000",
-            "3d": "assets/tshirt/uploads_files_4685659_Lil+Uzi+Tshirt+/Lil Uzi Tshirt topo.obj"
-        }
-    ],
-    "jamTangan": [
-        {
-            "nama": "Falken",
-            "deskripsi": "Jam tangan Falken dari Triwa menawarkan desain minimalis Skandinavia dengan perpaduan elegan antara bahan stainless steel dan kulit premium. Cocok untuk gaya formal maupun kasual, jam ini mengutamakan kualitas dan estetika modern.",
-            "harga": "Rp 5.000.000",
-            "3d": "assets/watch/uploads_files_419347_Triwa_Falken_Wrist_Watch.obj"
-        },
-        {
-            "nama": "Fossil",
-            "deskripsi": "Jam tangan Fossil menghadirkan perpaduan sempurna antara desain klasik dan teknologi modern, menggunakan material berkualitas tinggi dengan detail yang elegan, cocok untuk melengkapi gaya sehari-hari maupun acara formal.",
-            "harga": "Rp 4.000.000",
-            "3d": "assets/watch/uploads_files_2117109_Watch.obj"
-        },
-        {
-            "nama": "yazole",
-            "deskripsi": "Jam tangan Yazole menawarkan desain elegan dengan sentuhan modern, dilengkapi bahan berkualitas dan tampilan minimalis, cocok untuk gaya formal maupun kasual dengan harga yang terjangkau.",
-            "harga": "Rp 6.000.000",
-            "3d": "asset/watch/uploads_files_3204955_Yazole_HighPoly.obj"
-        },
-        {
-            "nama": "Skmei",
-            "deskripsi": "Jam tangan digital Skmei menggabungkan fungsi praktis dengan desain sporty, dilengkapi fitur seperti stopwatch, alarm, dan tahan air, menjadikannya pilihan ideal untuk aktivitas outdoor maupun gaya sehari-hari.",
-            "harga": "Rp 7.000.000",
-            "3d": "assets/watch/uploads_files_3308891_OBJ_Skmei_Digital_Watch.obj"
-        },
-        {
-            "nama": "Wrist",
-            "deskripsi": "Jam tangan Wrist mengutamakan desain simpel dan fungsional dengan bahan berkualitas, cocok untuk melengkapi gaya kasual maupun formal, menawarkan kombinasi antara kenyamanan dan estetika modern.",
-            "harga": "Rp 5.000.000",
-            "3d": "assets/watch/uploads_files_2406340_DigitalWristwatch.blend"
-        }
-    ],
-    "warna": [
-        "biru",
-        "kuning",
-        "merah",
-        "hijau",
-        "ungu"
+    "colors": [
+      "blue",
+      "yellow",
+      "red",
+      "green",
+      "purple"
     ]
-}
+  }
+  
