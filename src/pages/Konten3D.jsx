@@ -50,8 +50,8 @@ const Konten3D = () => {
       </div>
 
       {/* Modal */}
-      <dialog id="text_modal" className="modal w-full h-full bg-transparent flex items-center justify-center">
-        <div className="modal-box w-[50%] h-[50%] flex flex-col p-10 bg-red-600 justify-center items-center rounded-3xl">
+      <dialog id="text_modal" className="modal w-full h-full bg-transparent ">
+        <div className="modal-box w-full h-full justify-center items-center flex flex-col p-10 bg-transparent">
           <h3 className="font-bold text-lg">Hello!</h3>
           <p className="py-4">
             Press ESC key or click the button below to close
