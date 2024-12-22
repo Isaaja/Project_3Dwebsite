@@ -12,12 +12,14 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ItemDetails from "./pages/ItemDetails";
 
 function App() {
   useEffect(() => {
     Aos.init();
     Aos.refresh();
   }, []);
+
 
   return (
     <Router>
@@ -37,13 +39,10 @@ function App() {
             }
           />
           { }
-          <Route path="/konten3d" element={<Konten3D />} />
+          <Route path={""} element={<Konten3D />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/sepatu" element={<Sepatu />} />
-          <Route path="/kaos" element={<Kaos />} />
-          <Route path="/topi" element={<Topi />} />
-          <Route path="/jam-tangan" element={<JamTangan />} />
+          <Route path="/item-details/:item" element={<ItemDetails />} />
         </Routes>
       </div>
     </Router>

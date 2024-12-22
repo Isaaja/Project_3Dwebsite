@@ -24,7 +24,7 @@ const Contact = () => {
   return (
     <div className="bg-[#384C9D] flex flex-col justify-center items-center gap-[24px] py-[80px] rounded-t-[50px]">
       <img
-        src="/public/assets/products/logo-2.jpeg"
+        src="/assets/products/logo-2.jpeg"
         alt=""
         className="w-[75px] h-[75px] rounded-full"
       />

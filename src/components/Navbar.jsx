@@ -19,7 +19,7 @@ const Navbar = () => {
 
   // Fungsi untuk navigasi
   const handleButtonClick = (buttonName) => {
-    navigate(`/${buttonName.toLowerCase()}`); // Arahkan ke halaman yang sesuai
+    navigate(`/item-details/${buttonName.toLowerCase()}`); // Arahkan ke halaman yang sesuai
   };
 
   // Cek apakah URL saat ini sesuai dengan nama halaman
@@ -31,37 +31,37 @@ const Navbar = () => {
         } absolute top-0 left-0 w-full shadow-lg z-50 flex justify-between px-8 py-2 bg-slate-800 transition-all duration-300 ease-in-out`}
     >
       {/* Logo */}
-      <img src="/src/assets/logo.svg" alt="Logo" className="w-[200px]" onClick={() => handleButtonClick("")} />
+      <img src="/src/assets/logo.svg" alt="Logo" className="w-[200px]" onClick={() => navigate("/")} />
 
       {/* Button Group */}
-      <div className="flex gap-[40px] items-center">
+      <div className="flex gap-8 items-center">
         <div
-          className={`h-[100px] ${isActivePage("sepatu") || isActivePage("topi") || isActivePage("kaos") || isActivePage("jam-tangan")
+          className={`py-3 ${isActivePage("sepatu") || isActivePage("topi") || isActivePage("kaos") || isActivePage("jam-tangan")
             ? "text-black"
             : "text-white"
-            } bg-[#D9D9D9]/[.05] rounded-[50px] flex justify-center items-center px-[32px] gap-[40px] font-bold`}
+            } bg-[#D9D9D9]/[.05] rounded-[50px] flex justify-center items-center px-[32px] gap-8 font-bold`}
           style={{ boxShadow: "0 0 18px 13px rgba(0, 0, 0, 0.2)" }}
         >
           <button
-            className="bg-[#FFFFFF26] rounded-full px-4 py-2 font-inter transition min-w-[122px] h-[74px]"
+            className="bg-[#FFFFFF26] rounded-full px-4 py-2 font-inter transition min-w-[122px] h-16"
             onClick={() => handleButtonClick("sepatu")}
           >
             Sepatu
           </button>
           <button
-            className="bg-[#FFFFFF26] rounded-full px-4 py-2 font-inter transition min-w-[122px] h-[74px]"
+            className="bg-[#FFFFFF26] rounded-full px-4 py-2 font-inter transition min-w-[122px] h-16"
             onClick={() => handleButtonClick("topi")}
           >
             Topi
           </button>
           <button
-            className="bg-[#FFFFFF26] rounded-full px-4 py-2 font-inter transition min-w-[122px] h-[74px]"
+            className="bg-[#FFFFFF26] rounded-full px-4 py-2 font-inter transition min-w-[122px] h-16"
             onClick={() => handleButtonClick("kaos")}
           >
             Kaos
           </button>
           <button
-            className="bg-[#FFFFFF26] rounded-full px-4 py-2 font-inter transition min-w-[122px] h-[74px]"
+            className="bg-[#FFFFFF26] rounded-full px-4 py-2 font-inter transition min-w-[122px] h-16"
             onClick={() => handleButtonClick("jam-tangan")}
           >
             Jam Tangan
