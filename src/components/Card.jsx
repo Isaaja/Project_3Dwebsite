@@ -1,9 +1,9 @@
 import React from "react";
 
-const Card = ({ src, judul, barang }) => {
+const Card = ({ src, judul, barang, info }) => {
   return (
     <div
-      className="min-w-[250px] h-[250px] bg-cover rounded-[38px]  p-[28px] flex flex-col justify-between"
+      className="min-w-[250px] h-[250px] bg-cover rounded-[38px]  p-[28px] flex flex-col justify-between relative "
       data-aos="fade-up"
       data-aos-duration="2000"
       style={{
@@ -11,7 +11,13 @@ const Card = ({ src, judul, barang }) => {
         backgroundImage: `url(${src})`,
       }}
     >
-      <p className="font-[900] text-[20px] ">{judul}</p>
+      <p className="text-3xl text-[20px]">{judul}</p>
+      <div className=" w-full h-36 rounded-full flex justify-center items-center absolute  ml-7">
+        <img src="/assets/point/point.png" alt="" className="hover:bg-black" />
+      </div>
+      <div className=" w-10 rounded-full flex justify-center items-center mt-28  ">
+        <img src="/assets/point/point.png" alt="" className="hover:bg-black"/>
+      </div>
       <p>{barang}</p>
     </div>
   );
