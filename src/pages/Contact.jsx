@@ -17,7 +17,7 @@ const Contact = () => {
         {/* Footer */}
         <div className="w-[90%] flex mt-10 mb-4 font-inter">
           <div className="w-1/2  text-white p-4">
-            <h2 className="font-bold text-3xl">Brandku</h2>
+            <h2 className="font-bold text-3xl" id="contact">Brandku</h2>
             <p className="text-sm mt-4">
               Brandku merupakan platform fashion online yang menyediakan
               berbagai pilihan gaya hidup untuk pria dan wanita seperti kaos,
