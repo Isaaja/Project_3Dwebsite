@@ -7,11 +7,7 @@ const Konten3D = () => {
     "/assets/products/baju.jpeg",
     "/assets/products/jam-tangan.jpeg",
     "/assets/products/baju.jpeg",
-    "/assets/products/baju.jpeg",
-    "/assets/products/baju.jpeg",
-    "/assets/products/baju.jpeg",
-    "/assets/products/baju.jpeg",
-    "/assets/products/baju.jpeg",
+    "/assets/products/baju.jpeg"
   ];
 
   const openModal = () => {
@@ -24,15 +20,17 @@ const Konten3D = () => {
 
   return (
     <>
-      <div className="w-full bg-accent h-[110vh] relative overflow-hidden">
+      <div className="w-full bg-accent h-[110vh] relative overflow-hidden font-inter">
         <div className="bg-[#F7EEDD] w-[55%] h-[75%] rounded-3xl top-0">
-          <div className="text-black h-full flex flex-col p-10 relative">
-            <h1 className="text-5xl top-5">Lorem Ipsum</h1>
+          <div className="text-black h-full flex flex-col p-10 relative ">
+            <h1 className="text-5xl top-5 font-bold mt-5">
+              All of your styling needs are here{" "}
+            </h1>
             <p className="mt-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus, dignissimos ab numquam veritatis aperiam quod alias
-              reprehenderit, id a maxime, accusamus officia ipsum consequatur
-              assumenda? Error non modi deleniti eveniet.
+              Discover a selection of attractive and comfortable apparel for men
+              and women, such as shirts and shoes. We also provide a variety of
+              attractive and functional timepieces, as well as other accessories
+              such as hat.
             </p>
             <motion.div
               className="flex justify-start absolute gap-8 left-10 bottom-6 no-scrollbar"
@@ -48,23 +46,6 @@ const Konten3D = () => {
           </div>
         </div>
       </div>
-
-      {/* Modal */}
-      <dialog id="text_modal" className="modal w-full h-full bg-transparent ">
-        <div className="modal-box w-full h-full justify-center items-center flex flex-col p-10 bg-transparent">
-          <h3 className="font-bold text-lg">Hello!</h3>
-          <p className="py-4">
-            Press ESC key or click the button below to close
-          </p>
-          <div className="modal-action">
-            <form method="dialog">
-              <button className="btn" onClick={closeModal}>
-                Close
-              </button>
-            </form>
-          </div>
-        </div>
-      </dialog>
     </>
   );
 };
