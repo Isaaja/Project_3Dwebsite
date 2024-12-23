@@ -16,7 +16,7 @@ const Dashboard = () => {
         <div className="flex justify-end gap-7 items-end w-full px-9">
           <div className="w-1/2 flex overflow-hidden">
             <motion.div
-              className="card-wrapper flex gap-8 no-scrollbar"
+              className="card-wrapper flex gap-8 no-scrollbar "
               drag="x"
               dragConstraints={{ left: -500, right: 0 }}
             >
@@ -24,6 +24,7 @@ const Dashboard = () => {
                 src="/assets/products/card-1.jpeg"
                 judul="Sepatu"
                 barang="sepatu"
+                
               />
               <Card
                 src="/assets/products/card-1.jpeg"
