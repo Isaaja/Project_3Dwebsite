@@ -31,7 +31,7 @@ const Navbar = () => {
         } absolute top-0 left-0 w-full shadow-lg z-50 flex justify-between px-8 py-2 bg-slate-800 transition-all duration-300 ease-in-out`}
     >
       {/* Logo */}
-      <img src="/src/assets/logo.svg" alt="Logo" className="w-[200px]" onClick={() => navigate("/")} />
+      <img src="/assets/products/LogoDesign-transformed.webp" alt="Logo" className="w-44" onClick={() => navigate("/")} />
 
       {/* Button Group */}
       <div className="flex gap-8 items-center">
