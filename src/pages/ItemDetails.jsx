@@ -41,12 +41,12 @@ export default function ItemDetails() {
 
   return (
     <>
-        <div className="h-screen overflow-hidden w-full">
+        <div className="h-screen overflow-hidden w-full bg-white">
           <div className=" mt-32 p-8 ">
             <h1 className="text-3xl font-bold text-left">{item.name}</h1>
             <p className=" text-left text-gray-700">{item.description}</p>
           </div>
-          <div className="w-full h-full flex items-center justify-center">
+          <div className="w-full h-full flex items-center justify-center bg-transparent">
             <ThreeDViewer path={item.model3d} texturePath={item.texture}/>
           </div>
         </div>

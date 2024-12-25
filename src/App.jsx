@@ -39,9 +39,7 @@ function App() {
             }
           />
           { }
-          <Route path={""} element={<Konten3D />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<Dashboard />} />
           <Route path="/item-details/:id" element={<ItemDetails />} />
         </Routes>
       </div>

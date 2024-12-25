@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
@@ -17,6 +19,7 @@ const Navbar = () => {
         alt="Logo"
         width={150}
         onClick={() => navigate("/")}
+        className="cursor-pointer"
       />
 
       {/* Button Group */}

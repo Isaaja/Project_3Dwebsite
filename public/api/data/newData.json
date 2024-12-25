@@ -3,7 +3,7 @@
     {
       "id": 1,
       "category": "shoes",
-      "name": "Nike",
+      "name": "Puma",
       "description": "Sepatu ini memiliki desain sporty dan minimalis, dengan bentuk yang simpel namun fungsional. Cocok digunakan untuk aktivitas sehari-hari maupun olahraga ringan, sepatu ini menawarkan kenyamanan dan fleksibilitas. Dengan tampilan modern, sepatu ini dapat melengkapi gaya kasual Anda.",
       "price": 9000000,
       "currency": "IDR",
@@ -17,8 +17,8 @@
       "description": "Topi Reebok adalah aksesori olahraga dan gaya hidup yang dirancang dengan bahan ringan dan nyaman. Merek ini menawarkan berbagai jenis topi, termasuk snapback, baseball cap, dan visor, dengan desain modern dan logo Reebok yang ikonik.",
       "price": 1000000,
       "currency": "IDR",
-      "model3d": "/assets/images/3d/hat/hat1/object/hat.obj",
-      "texture": ""
+      "model3d": "/assets/images/3d/hat/hat1/object/thrasher_cap__corona.obj",
+      "texture": "/assets/images/3d/hat/hat1/texture/thrasher_cap_cap_diff1.jpg"
     },
     {
       "id": 3,

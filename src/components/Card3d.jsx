@@ -12,7 +12,8 @@ const Card3d = ({ src, judul, barang }) => {
           backgroundImage: `url(${src})`,
         }}
       >
-        <p className="font-[900] text-[20px] ">{judul}</p>
+        <p className="font-[900] text-[20px] ">{judul}
+        </p>
         <p>{barang}</p>
       </div>
     </div>
