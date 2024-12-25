@@ -36,12 +36,10 @@ const ThreeDViewer = ({ path, texturePath }) => {
 
     // Load Texture
     const textureLoader = new THREE.TextureLoader();
-    const texture = textureLoader.load(
-      "/assets/images/3d/shoe/Puma_Shoe_Texture.jpg",
-      () => {
-        console.log("Texture loaded successfully");
-      }
-    );
+    const texture = textureLoader.load("/assets/images/3d/shoe/Puma_Shoe_Texture.jpg", () => {
+      texture.wrapS = THREE.RepeatWrapping; // Ensure texture wraps correctly
+      texture.wrapT = THREE.RepeatWrapping;
+    });
 
     // Load OBJ Model
     const loader = new OBJLoader();
@@ -57,9 +55,8 @@ const ThreeDViewer = ({ path, texturePath }) => {
         // Apply the texture to the model's material
         obj.traverse((child) => {
           if (child.isMesh) {
-            child.material = new THREE.MeshStandardMaterial({
-              map: texture, // Apply the texture
-            });
+            child.material.map = texture; // Apply the texture to the model
+            child.material.needsUpdate = true;
           }
         });
 
