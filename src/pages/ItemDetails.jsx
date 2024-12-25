@@ -11,7 +11,7 @@ export default function ItemDetails() {
   useEffect(() => {
     const fetchItemDetails = async () => {
       try {
-        const response = await fetch("/api/data/data.json");
+        const response = await fetch("/api/data/newData.json");
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
@@ -36,6 +36,9 @@ export default function ItemDetails() {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
 
+
+  console.log(item)
+
   return (
     <>
         <div className="h-screen overflow-hidden w-full">
@@ -44,7 +47,7 @@ export default function ItemDetails() {
             <p className=" text-left text-gray-700">{item.description}</p>
           </div>
           <div className="w-full h-full flex items-center justify-center">
-            <ThreeDViewer path={item.model3d} modelColor={"red"}/>
+            <ThreeDViewer path={item.model3d} texturePath={item.texture}/>
           </div>
         </div>
     </>
