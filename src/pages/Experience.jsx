@@ -1,22 +1,33 @@
 const Experience = () => {
   return (
-    <div className="px-5 w-full">
-      <div className="bg-[#F7EEDD] h-screen rounded-t-[75px] flex gap-3 justify-between px-8">
-        <div className=" w-[50%] flex flex-col h-full justify-center items-left">
-          <h1 className="font-bold text-3xl">Brandku</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            placeat architecto culpa fuga ex blanditiis ullam repellat laborum
-            laudantium facilis assumenda, at omnis natus sit voluptatum iusto,
-            aliquid hic voluptatibus!
-          </p>
-        </div>
-        <div
-          className="w-[50%] h-full flex justify-center items-center"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-        >
-          <img src="assets/products/experience.png" alt="" />
+    <div className="w-full h-full">
+      <div className="w-full flex justify-center items-center">
+        <div className="bg-[#F7EEDD] mr-8 ml-8 h-dvh flex overflow-hidden shadow-lg mx-auto rounded-t-[50px]" id="about">
+          {/* Left Content */}
+          <div className="w-1/2 p-10 flex flex-col justify-center font-inter">
+            <h1 className="font-extrabold text-6xl mb-5">
+              Unleash your expression
+            </h1>
+            <p className="text-gray-700 leading-relaxed">
+              The world of fashion is about self-expression, and we believe that
+              everyone has a distinct style that they can share with the world.
+              We strive to assist you locate apparel, watches, and other
+              accessories that will allow you to confidently express yourself.
+            </p>
+          </div>
+
+          {/* Right Image */}
+          <div
+            className="w-1/2 flex justify-center items-center relative"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <img
+              src="assets/products/experience.png"
+              alt="Fashion Inspiration"
+              className="rounded-2xl object-cover w-[80%]"
+            />
+          </div>
         </div>
       </div>
     </div>
