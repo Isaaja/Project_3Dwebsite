@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "category": "shoes",
+      "name": "Nike",
+      "description": "Sepatu ini memiliki desain sporty dan minimalis, dengan bentuk yang simpel namun fungsional. Cocok digunakan untuk aktivitas sehari-hari maupun olahraga ringan, sepatu ini menawarkan kenyamanan dan fleksibilitas. Dengan tampilan modern, sepatu ini dapat melengkapi gaya kasual Anda.",
+      "price": 9000000,
+      "currency": "IDR",
+      "model3d": "/assets/images/3d/shoe/shoe1/object/PUMA_OBJ.obj",
+      "texture": "/assets/images/3d/shoe/shoe1/texture/Puma_Shoe_Texture.jpg"
+    },
+    {
+      "id": 2,
+      "category": "hat",
+      "name": "Rebook",
+      "description": "Topi Reebok adalah aksesori olahraga dan gaya hidup yang dirancang dengan bahan ringan dan nyaman. Merek ini menawarkan berbagai jenis topi, termasuk snapback, baseball cap, dan visor, dengan desain modern dan logo Reebok yang ikonik.",
+      "price": 1000000,
+      "currency": "IDR",
+      "model3d": "/assets/images/3d/hat/hat1/object/hat.obj",
+      "texture": ""
+    },
+    {
+      "id": 3,
+      "category": "shirts",
+      "name": "H&M",
+      "description": "Kaos polos H&M terbuat dari bahan yang lembut dan nyaman, dengan desain minimalis yang cocok untuk gaya kasual sehari-hari. Tersedia dalam berbagai warna, kaos ini mudah dipadukan dengan berbagai jenis pakaian untuk tampilan yang stylish dan simpel.",
+      "price": 350000,
+      "currency": "IDR",
+      "model3d": "/assets/images/3d/tshirt/tshirt1/object/Lil Uzi Tshirt topo.obj",
+      "texture": "/assets/images/3d/tshirt/tshirt1/texture/Lil Uzi Tshirt topo_1001_BaseColor.png"
+    },
+    {
+      "id": 4,
+      "category": "watches",
+      "name": "Fossil",
+      "description": "Jam tangan Fossil menghadirkan perpaduan sempurna antara desain klasik dan teknologi modern, menggunakan material berkualitas tinggi dengan detail yang elegan, cocok untuk melengkapi gaya sehari-hari maupun acara formal.",
+      "price": 4000000,
+      "currency": "IDR",
+      "model3d": "/assets/images/3d/watch/watch1/object/uploads_files_2117109_Watch.obj",
+      "texture": "/assets/images/3d/watch/watch1/texture/Clock_default_BaseColor.png"
+    }
+  ],
+  "colors": ["blue", "yellow", "red", "green", "purple"]
+}
