@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="absolute w-full top-0 flex justify-between px-8 transition-all duration-300 ease-in-out">
+    <div className="absolute w-full top-0 flex justify-between px-8 transition-all duration-300 ease-in-out z-50">
       {/* Logo */}
       <img
         src="/assets/products/LogoDesign-transformed.webp"
