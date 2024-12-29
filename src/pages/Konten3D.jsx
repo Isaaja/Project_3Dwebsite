@@ -19,8 +19,8 @@ const Konten3D = () => {
 
   return (
     <div className="w-full h-[110vh] relative overflow-hidden font-inter">
-      <div className="bg-[#F7EEDD] w-[55%] h-[75%] rounded-3xl top-0">
-        <div className="text-black h-full flex flex-col p-10 relative ">
+      <div className="bg-secondary w-[55%] h-[75%] rounded-3xl top-0">
+        <div className="text-white h-full flex flex-col p-10 relative ">
           <h1 className="text-5xl top-5 font-bold mt-5" id="bestSeller">
             All of your styling needs are here
           </h1>
