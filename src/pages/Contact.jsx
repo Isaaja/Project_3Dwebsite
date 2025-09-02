@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className="w-full h-full">
       {/* Header Section */}
-      <div className="bg-[#384C9D] flex flex-col justify-center items-center rounded-t-[50px]">
+      <div className="bg-secondary flex flex-col justify-center items-center rounded-t-[50px]">
         {/* Logo */}
         <img
           src="/assets/products/logo-2.jpeg"

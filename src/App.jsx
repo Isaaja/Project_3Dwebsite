@@ -19,7 +19,7 @@ function App() {
 
   return (
     <Router>
-      <div className="font-inter overflow-x-hidden">
+      <div className="font-inter overflow-x-hidden bg-primary">
         <Navbar />
         <Routes>
           { }

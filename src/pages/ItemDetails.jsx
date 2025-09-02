@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import ThreeDViewer from "../components/ThreeDViewer";
+import { CaretLeft, CaretRight } from "phosphor-react";
 
 export default function ItemDetails() {
   const { id } = useParams();
   const [item, setItem] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const navigator = useNavigate();
 
   useEffect(() => {
     const fetchItemDetails = async () => {
@@ -47,6 +49,23 @@ export default function ItemDetails() {
             </p>
           </div>
 
+          <div className="w-full bottom-32 left-0 absolute flex justify-center z-30">
+            <div className="w-1/2 flex justify-between">
+              <button
+                className={`btn btn-outline px-12 ${parseInt(id) <= 1 && "invisible"}`}
+                onClick={() => navigator(`/item-details/${parseInt(id) - 1}`)}
+              >
+                <CaretLeft size={32} />
+              </button>
+              <button
+                className={`btn btn-outline px-12 ${parseInt(id) >= 4 && "invisible"}`}
+                onClick={() => navigator(`/item-details/${parseInt(id) + 1}`)}
+              >
+                <CaretRight size={32} />
+              </button>
+            </div>
+          </div>
+
           <div className="item-details-control w-1/6 gap-3 flex flex-col relative z-30">
             <h1 className="uppercase font-bold">Pilih Seri Barang</h1>
             <div className="button-wrapper w-full grid grid-cols-2 grid-flow-row place-items-start gap-6">
@@ -67,7 +86,9 @@ export default function ItemDetails() {
               </div>
             </div>
 
-            <button className="order-button btn mt-2 2xl:mt-12 rounded-badge text-xl font-bold bg-secondary">Order Here</button>
+            <button className="order-button btn mt-2 2xl:mt-12 rounded-badge text-xl font-bold bg-secondary">
+              Order Here
+            </button>
           </div>
         </div>
         <div className="absolute w-full h-full  z-20 top-0 left-0 overflow-hidden">

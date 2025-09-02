@@ -29,17 +29,17 @@ const Dashboard = () => {
               <Card
                 src="/assets/products/card-1.jpeg"
                 judul="Topi"
-                barang="sepatu"
+                barang="Topi"
               />
               <Card
                 src="/assets/products/card-1.jpeg"
                 judul="Kaos"
-                barang="sepatu"
+                barang="Kaos"
               />
               <Card
                 src="/assets/products/card-1.jpeg"
                 judul="Jam Tangan"
-                barang="sepatu"
+                barang="Jam Tangan"
               />
             </motion.div>
           </div>
